@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tasty Munchies Food Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  </head>
+  
+<style>
+	@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  display: block;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+
+}
+nav {
+  background-color: white;
+}
+.navbar-brand img {
+  max-height: 80px;
+  margin-right: 3px;
+}
+.navbar{
+  background-color: #80312B;
+}
+.navbar-brand:hover {
+  color:#CCACB0; 
+}
+.navbar-brand {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ffffff;
+}
+nav ul li a {
+  color: #ffffff;
+  font-size: 15px;
+  margin: auto 20px;
+}
+nav ul li a:hover {
+  color: #CCACB0;
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #CC4E45;
+  text-align: left;
+  margin-bottom: 20px;
+}
+section p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+}
+#hero .col {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 150px;
+}
+#hero .img-col {
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+#hero img {
+  max-width: 130% !important;
+  width: 130%;
+}
+#about-us .btn-about-us {
+  width: 150px; 
+}
+#products .col {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 150px;
+}
+#products .img-col {
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+#products img {
+  max-width: 130% !important;
+  width: 130%;
+}
+#projects .projects {
+  margin-bottom: 50px;
+}
+#contact {
+  text-align: center;
+  background-color: #80312B;
+  color: white;
+}
+#contact h1 {
+  text-align: center;
+  color: white;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media p {
+  margin-right: 20px;
+}
+#contact p {
+      text-align: center;
+}
+  </style>
+  <body>
+  <!-- Navbar -->
+	<nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar">
+	  <div class="container">
+		<a class="navbar-brand" href="#">
+		  <img src = "https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/449322435_440538415461587_4431640224611128885_n.png?stp=dst-png_p1080x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHSCOJuQzJ8ZcTWdFPmmF9ZRu0_3HQex8hG7T_cdB7HyKkhSGTaMGlIcr_F70gLLcoFzclmSWXy-IV8mbm_gEcE&_nc_ohc=uUKsTdmZN2sQ7kNvgGH8rFV&_nc_ht=scontent.fmnl4-3.fna&oh=03_Q7cD1QHzq-F5AKH4LGecYTYLGq7-zfjohQsG5CEcJ8JStuPEUQ&oe=66B1DF04" class="logo" /> Tasty Munchies
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#about-us">About Us</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#products">Products</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#contact">Contact</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  <!-- End Navbar -->
+  <!-- Hero section -->
+	<section id="hero">
+	  <div class="container">
+		<div class="row">
+		  <div class="col">
+			<h1>Food Delicacies</h1>
+			<p>Howdy People! <br><br> Looking for something sweet that is perfect for your small budget? Worry no more! Tasty Munchies has it all! With their variety of desserts that will surely satisfy your cravings, buy now!</p>
+		  </div>
+		  <div class="col img-col">
+			<img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/446005422_784360217182463_1560829923418066362_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEnML0uo9AqjesZ41RLjSTWAzcuz72xo7cDNy7PvbGjty5-qcP87WXFobB3Clpb2co0e7nslVKwE-21Q80FYtP3&_nc_ohc=1_LMakR1zxsQ7kNvgFeudNf&_nc_ht=scontent.fmnl4-1.fna&oh=03_Q7cD1QH2rQSVwPaa2MGRNJKWsGLDEmHD73_5WGPaEO6FhDtVbg&oe=66B1E482" class="img-fluid" alt="Eating food">
+		  </div>
+		</div>
+		</section>
+  <!-- End Hero section -->
+  <!-- About us section -->
+  	<section id="about-us">
+	  <div class="container">
+		<div class="row align-items-center">
+		  <div class="col">
+			<img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/448852892_1556039958587911_5242317184396092650_n.png?stp=dst-png_s2048x2048&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFxvwwHAgXJFenOXS654eO_4mmCsVz1Sf_iaYKxXPVJ_zKMe9FT9x9RQqlUURLJVMnskuObtQhea1LbVgWeo5CM&_nc_ohc=64sCL5D28acQ7kNvgEB4sWb&_nc_ht=scontent.fmnl4-2.fna&oh=03_Q7cD1QETHV7Z2oXuV6Utadvp1BqbJISiW-sX-rlcdSmpZYmCQA&oe=66B20EF3" alt="About Us" style="height: 400px; margin-left: -200px; margin-top: 100px;">
+		  </div>
+		  <div class="col text-col">
+			<h1 style="padding-top:120px;">About Us</h1>
+			<p> To learn more about us, indulge in our passion for creating decadent desserts that promise to delight your taste buds and elevate your experience. </p>
+			<a class="btn btn-dark btn-about-us" style="width: 150px; margin-top:40px; " href="about-us.html">Learn More</a>
+		  </div>
+		</div>
+	  </div>
+	</section>
+  <!-- End About us section -->
+  <!-- Products section -->
+  <section id="products" style="padding-bottom:200px;">
+	<div class="container">
+	  <div class="row">
+		<div class="col">
+		  <h1>Products</h1>
+		  <p>You can explore our page to discover the wide variety of delicious delicacies our business has to offer. From savory treats to decadent desserts, there's something to delight every palate!</p>
+		  <a class="btn btn-dark btn-about-us" style="width: 150px; margin-top:40px; " href="products.html">Explore</a>
+		</div>
+		<div class="col img-col">
+		  <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/446005422_784360217182463_1560829923418066362_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEnML0uo9AqjesZ41RLjSTWAzcuz72xo7cDNy7PvbGjty5-qcP87WXFobB3Clpb2co0e7nslVKwE-21Q80FYtP3&_nc_ohc=1_LMakR1zxsQ7kNvgFeudNf&_nc_ht=scontent.fmnl4-1.fna&oh=03_Q7cD1QH2rQSVwPaa2MGRNJKWsGLDEmHD73_5WGPaEO6FhDtVbg&oe=66B1E482" class="img-fluid" alt="Eating food">
+		</div>
+	  </div>
+	  </section>
+  <!-- End Products section -->
+<!-- Contact section -->
+<section id="contact" style="padding-bottom:10px;">
+	<div class="container">
+	  <div class="row align-items-center">
+		<div class="col text-center">
+		  <h1>Contact US</h1>
+		  <p>Feel free to visit our <a href="https://web.facebook.com/profile.php?id=61552158303701" target="_blank">Facebook</a> page and <a href="action.php" target="_blank">Instagram</a> profile for the latest updates and exclusive offers. Additionally, you can reach us at our <a href="tel:+1234567890">landline number</a> for inquiries or orders. We look forward to engaging with you on social media!</p>
+		</div>
+	  </div>
+	</div>
+  </section>  
+  <!-- End Contact section -->  
+  </body>
+</html>
