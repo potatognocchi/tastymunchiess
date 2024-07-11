@@ -153,13 +153,19 @@ body{
     </div>
 
     <script>
+	    function validateEmail(email) {
+    // Regular expression to match a standard email address format
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+	    
         function validateForm(event) {
             event.preventDefault(); 
 
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
             
-            if (username === "example" && password === "password") {
+            if (username === "example" && password === "password" && validateEmail(username)) {
                 alert("Login successful!"); 
 				window.location.href = "homepage.html";
                 
