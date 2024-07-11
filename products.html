@@ -85,20 +85,20 @@
     #contact p {
       text-align: center;
     }
-    .intro {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      min-height: 60vh; 
-      padding: 300px;
-      color: black;
+    .intro .container {
+    text-align: center;
+    margin: 20px auto; 
+    padding: 20px; 
     }
-     .container {
-      max-width: 1200px; 
-      padding: 0 15px;
-      margin: 0 auto;
+
+    .intro h1 {
+     margin-bottom: 20px; 
     }
+	
+    .intro p {
+     margin: 0 auto;
+     max-width: 600px; /* Adjust as necessary */
+     }
   </style>
   <body>
     <!-- Navbar -->
@@ -133,11 +133,12 @@
     </nav>
     <!-- End Navbar -->
     <!-- Introduction -->
-    <section class="intro" style="padding-bottom: 40px;">
-      <div class="container">
-      <h1 style="text-align: center;">Products</h1>
-      <p style="text-align:center;">Welcome to Tasty Munchies Delicacies, where we bring you the finest and most delicious gourmet treats, crafted with love and the freshest ingredients to satisfy every craving.</p>
-    </section>
+    <section class="intro">
+    <div class="container">
+        <h1>Products</h1>
+        <p>Welcome to Tasty Munchies Delicacies, where we bring you the finest and most delicious gourmet treats, crafted with love and the freshest ingredients to satisfy every craving.</p>
+    </div>
+</section>
     <!-- End Introduction -->
   <!-- Donuts section -->
   <section id="hero">
